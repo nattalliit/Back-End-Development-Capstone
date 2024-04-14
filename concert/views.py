@@ -37,7 +37,13 @@ def index(request):
 
 
 def songs(request):
-    songs = {"songs":[{"id":1,"title":"duis faucibus accumsan odio curabitur convallis","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."}]}
+    songs = {"songs":[{"id":1,"title":"duis faucibus accumsan odio curabitur convallis","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":2,"title":"dictumst etiam faucibus cursus amaut","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":3,"title":"in faucibus orci luctus et ultrices","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":4,"title":"nulla quisque arcuqibero rutrum ac","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":5,"title":"luctus rutrum nulla nellusin sagittis dui vel nisl","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":6,"title":"diam id ornare imperdiet sapien urna pretium nisl ut volutpat","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."},
+    {"id":7,"title":"molestie sed justo pellentesque viverra pede ac","lyrics":"Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."}]}
     return render(request, "songs.html", {"songs":songs["songs"]})
     pass
 
@@ -46,6 +52,46 @@ def photos(request):
     photos = [{
     "id": 1,
     "pic_url": "http://dummyimage.com/136x100.png/5fa2dd/ffffff",
+    "event_country": "United States",
+    "event_state": "District of Columbia",
+    "event_city": "Washington",
+    "event_date": "11/16/2022"
+    },
+    {
+    "id": 2,
+    "pic_url": "http://dummyimage.com/230x100.png/dddddd/ffffff",
+    "event_country": "United States",
+    "event_state": "Florida",
+    "event_city": "Naples",
+    "event_date": "11/16/2022"
+    },
+    {
+    "id": 3,
+    "pic_url": "http://dummyimage.com/136x100.png/5fa2dd/ffffff",
+    "event_country": "United States",
+    "event_state": "Ohio",
+    "event_city": "Youngstown",
+    "event_date": "7/11/2022"
+    },
+    {
+    "id": 4,
+    "pic_url": "http://dummyimage.com/175x100.png/dddddd/ffffff",
+    "event_country": "United States",
+    "event_state": "District of Columbia",
+    "event_city": "Washington",
+    "event_date": "11/16/2022"
+    },
+    {
+    "id": 5,
+    "pic_url": "http://dummyimage.com/167x100.png/ff4444/ffffff",
+    "event_country": "United States",
+    "event_state": "District of Columbia",
+    "event_city": "Washington",
+    "event_date": "11/16/2022"
+    },
+    {
+    "id": 6,
+    "pic_url": "http://dummyimage.com/232x100.png/5fa2dd/ffffff",
     "event_country": "United States",
     "event_state": "District of Columbia",
     "event_city": "Washington",
